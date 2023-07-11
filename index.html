@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="ibm section">
+            <div class="info">
+                <h1>Calculadora de Índice de Massa Corporal</h1>
+                <p>
+                    Entender melhor seu peso em relação a su
+                    a altura usando nossa calculadora de índice
+                    de massa corporal (BM). Embora o IMC não
+                    seja o único determinante do peso saudável,
+                    ele oferece um ponto de partida valioso
+                    para avaliar sua saúde e bem-estar geral.
+                </p>
+            </div>
+            <div class="calc">
+                <h2>Insira seus dados abaixo</h2>
+
+                <div class="inputs">
+                    <div class="input-ibm">
+                        <label>Altura</label>
+                        <div>
+                            <input id="cm" type="number">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <div class="input-ibm">
+                        <label>Peso</label>
+                        <div>
+                            <input id="kg" type="number">
+                            <span>kg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="result">
+                    <h3 id="result">Bem vindo!</h3>
+                    <p id="instruction">Insira seu peso e sua altura e veja o resultado do seu IMC aqui.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ibm-result section">
+            <div class="info-result">
+                <div>
+                    <img src="./images/saude.jpg"
+                        alt="casal correndo">
+                </div>
+                <div class="texts">
+                    <h1>O que significa o resultado do seu IMC</h1>
+                    <p>
+                        <b>Magreza</b>: abaixo de 22.<br />
+
+                        <b>Normal</b>: de 22 a 27.<br />
+
+                        <b>Excesso de peso</b>: acima de 27.
+                    </p>
+
+                    <p class="text">
+                        A magreza grave (IMC abaixo de 16) é uma condição que pode ser causada por
+                        desnutrição severa. Assim, consulte um médico, pois este peso é uma ameaça à saúde.
+                    </p>
+
+                    <p class="text">
+                        Acima do IMC 30 a pessoa é considerada obesa, o que por si só já é uma doença.
+                        Graças ao peso, o risco para diversas condições aumenta consideravelmente.
+                        Um médico pode indicar um meio ideal para a regulação do peso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="habits">
+                <div class="habit">
+                    <div class="icon comida">
+                        <img src="./images/comida.png" alt="">
+                    </div>
+                    <h4>Alimentação saudável</h4>
+                    <p>
+                        Mais energia, orevine doenças infecciosas, diminui o risco de doenças crônicas,
+                        melhora a concentração, previne o envelhecimento precoce, regula a produção de hormônios.
+                    </p>
+                </div>
+                <div class="habit">
+                    <div class="icon exercicio">
+                        <img src="./images/exercicio.png" alt="">
+                    </div>
+                    <h4>Exercícios físicos</h4>
+                    <p>
+                        Fortalece o sistema imunológico, diminui a pressão arterial e melhora a circulação sanguínea,
+                        controla a glicemia e complicações da diabetes, melhora o humor, promove o bem-estar físico e
+                        mental.
+                    </p>
+                </div>
+                <div class="habit">
+                    <div class="icon sono">
+                        <img src="./images/sono.png" alt="">
+                    </div>
+                    <h4>Sono adequado</h4>
+                    <p>
+                        Maior longevidade, menos inflamações, evitar a depressão, evitar problemas hormonais,
+                        eliminar o estresse, pele mais bonita, melhorar o desempenho físico.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

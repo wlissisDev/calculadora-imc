@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ==================section 02======================== */
+
+.container {
+    width: 100vw;
+    height: auto;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.ibm {
+    position: relative;
+}
+
+.info {
+    border-bottom-right-radius: 50px;
+    width: 70%;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(233, 247, 253)58%, rgb(221, 248, 253) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.info h1 {
+    width: 600px;
+    font-weight: 800;
+    font-size: 3em;
+    color: rgb(23, 29, 39);
+}
+
+.info p {
+    margin-top: 2em;
+    width: 600px;
+    line-height: 22px;
+}
+
+.calc {
+    height: fit-content;
+    background: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: absolute;
+    right: 200px;
+    top: 30%;
+
+    padding: 1.6em;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calc .inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calc .inputs .input-ibm div {
+    height: 50px;
+    width: 180px;
+    margin-top: 8px;
+    padding: 0 15px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calc .inputs .input-ibm label {
+    font-size: 12px;
+}
+
+.calc .inputs .input-ibm div input {
+    border: 0;
+    height: 100%;
+    width: 90%;
+    outline: none;
+    font-size: 1em;
+    color: #6d6d6d;
+    font-weight: bold;
+}
+
+.calc .inputs .input-ibm span {
+    color: rgb(111, 111, 255);
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.calc .result {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(111, 111, 255);
+    color: #FFF;
+    border-radius: 8px 50px 50px 8px;
+
+    display: grid;
+    place-content: center;
+}
+
+.calc .result>* {
+    width: 300px;
+}
+
+/* ==================section 02======================== */
+
+.ibm-result {
+    height: auto;
+    flex-direction: column;
+    padding: 4em;
+}
+
+.ibm-result .info-result {
+    display: flex;
+}
+
+.ibm-result .info-result div {
+    flex: 1;
+    display: grid;
+    place-content: center;
+    padding-top: 3em;
+}
+
+.info-result .texts h1 {
+    font-weight: bold;
+    width: 500px;
+    color: #23222c;
+    font-size: 2.6em;
+}
+
+.info-result .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ibm-result .texts p {
+    width: 500px;
+    text-align: left;
+    color: #6d6d6d;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.ibm-result .info-result img {
+    border-radius: 14px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ibm-result .habits {
+    width: 100%;
+    margin-top: 4em;
+    padding: 4em;
+    border-radius: 0 15px 15px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(233, 247, 253)58%, rgb(221, 248, 253) 100%);
+}
+
+.ibm-result .habits .habit {
+    width: 300px;
+    height: 280px;
+
+    padding: 1em;
+    border-radius: 10px;
+    background: #FFF;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.comida {
+    background: rgb(229, 152, 132);
+}
+
+.exercicio {
+    background: rgb(231, 231, 124);
+}
+
+.sono {
+    background: rgb(175, 255, 175);
+}
+
+.icon img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.habit h4 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.habit p {
+    font-size: 14px;
+    color: #6d6d6d;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* ==============responsive tabled================= */
+
+/*================== responsive mobile ============= */
+@media (max-width:425px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .ibm {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+    }
+
+    .info h1 {
+        width: fit-content;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .info p {
+        width: fit-content;
+        text-align: center;
+
+    }
+
+    .calc {
+        top: 80%;
+        right: 9%;
+    }
+
+    .calc .inputs {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calc .inputs .input-ibm div {
+        width: 100%;
+    }
+
+    .ibm-result {
+        padding: 0;
+    }
+
+    .ibm-result .info-result {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ibm-result .info-result img {
+        margin-top: 15em;
+    }
+
+    .ibm-result .info-result .texts {
+        text-align: center;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ibm-result .info-result .texts h1 {
+        text-align: center;
+        width: 95%;
+    }
+
+    .ibm-result .info-result .texts p {
+        text-align: center;
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+    .ibm-result .habits {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .ibm-result .habits .habit {
+        width: 100%;
+    }
+
+    .ibm-result .habits .habit h4 {
+        font-size: 2em;
+    }
+
+    .ibm-result .habits .habit p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:768px) {
+    .section {
+        width: 100vw;
+    }
+
+    .ibm .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .ibm .info {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .ibm .info h1 {}
+
+    .ibm .info p {}
+
+    .calc {
+        display: flex;
+        top: 80%;
+    }
+    .calc .inputs{
+        display: flex;
+    }
+
+    .ibm-result {
+        padding: 0;
+    }
+
+    .ibm-result .info-result {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ibm-result .info-result img {
+        margin-top: 15em;
+    }
+
+    .ibm-result .info-result .texts {
+        text-align: center;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ibm-result .info-result .texts h1 {
+        text-align: center;
+        width: 95%;
+    }
+
+    .ibm-result .info-result .texts p {
+        text-align: center;
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+
+    .ibm-result .habits {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .ibm-result .habits .habit {
+        width: 100%;
+    }
+
+    .ibm-result .habits .habit h4 {
+        font-size: 2em;
+    }
+
+    .ibm-result .habits .habit p {
+        font-size: 1.2em;
+    }
+
+}
